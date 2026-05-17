@@ -1,3 +1,5 @@
+import ThemeToggle from "./ThemeToggle";
+
 export default function Topbar() {
   return (
     <div className="glass border-b border-white/10 px-8 py-5 flex justify-between items-center sticky top-0 z-40">
@@ -5,6 +7,9 @@ export default function Topbar() {
       <h2 className="text-2xl font-black">
         Dashboard
       </h2>
+
+      <div className="flex items-center gap-5">
+  <ThemeToggle />
 
       <div className="flex items-center gap-5">
 
