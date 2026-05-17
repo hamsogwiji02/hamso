@@ -9,9 +9,8 @@ export default function Topbar() {
       </h2>
 
       <div className="flex items-center gap-5">
-  <ThemeToggle />
 
-      <div className="flex items-center gap-5">
+        <ThemeToggle />
 
         <div className="bg-cyan-500/20 px-5 py-2 rounded-xl">
           Balance: $120.00
