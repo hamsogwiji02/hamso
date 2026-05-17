@@ -1,4 +1,5 @@
 import DashboardLayout from "../layouts/DashboardLayout";
+import OrdersChart from "../components/OrdersChart";
 
 export default function Dashboard() {
 
@@ -22,6 +23,7 @@ export default function Dashboard() {
   ];
 
   return (
+    <OrdersChart />
     <DashboardLayout>
 
       <div className="grid md:grid-cols-4 gap-6">
