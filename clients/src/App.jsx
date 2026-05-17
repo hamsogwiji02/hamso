@@ -6,6 +6,7 @@ import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import ProtectedRoute from "./routes/ProtectedRoute";
 import NewOrder from "./pages/NewOrder";
+import ServicesPage from "./pages/ServicesPage";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
   }
 />
     <Route path="/new-order" element={<NewOrder />} />
+    <Route path="/services" element={<ServicesPage />} />
     </Routes>
   );
 }
