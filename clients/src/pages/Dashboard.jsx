@@ -24,10 +24,9 @@ export default function Dashboard() {
   ];
 
   return (
-    <OrdersChart />
-    <Notifications />
     <DashboardLayout>
 
+      {/* Stats Cards */}
       <div className="grid md:grid-cols-4 gap-6">
 
         {cards.map((card, index) => (
@@ -47,6 +46,13 @@ export default function Dashboard() {
 
       </div>
 
+      {/* Orders Chart */}
+      <OrdersChart />
+
+      {/* Notifications */}
+      <Notifications />
+
+      {/* Recent Orders */}
       <div className="glass p-8 rounded-[30px] mt-10">
 
         <h2 className="text-3xl font-black mb-6">
@@ -66,19 +72,35 @@ export default function Dashboard() {
             </thead>
 
             <tbody>
+
               <tr className="border-b border-white/5">
-                <td className="py-5">Instagram Followers</td>
+                <td className="py-5">
+                  Instagram Followers
+                </td>
+
                 <td>@bloompanel</td>
+
                 <td>5000</td>
-                <td className="text-green-400">Completed</td>
+
+                <td className="text-green-400">
+                  Completed
+                </td>
               </tr>
 
               <tr>
-                <td className="py-5">TikTok Views</td>
+                <td className="py-5">
+                  TikTok Views
+                </td>
+
                 <td>@viralvideo</td>
+
                 <td>10000</td>
-                <td className="text-yellow-400">Pending</td>
+
+                <td className="text-yellow-400">
+                  Pending
+                </td>
               </tr>
+
             </tbody>
           </table>
 
