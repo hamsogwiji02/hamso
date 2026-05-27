@@ -1,0 +1,20 @@
+1.FRONTED SETUPS
+
+npm create vite@latest client -- --template react
+cd client
+npm install
+
+npm install react-router-dom axios framer-motion
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+
+ 
+2. BACKEND SETUPS
+
+mkdir server
+cd server
+npm init -y
+
+npm install express mongoose cors dotenv bcryptjs jsonwebtoken
+npm install nodemon --save-dev
